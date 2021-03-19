@@ -1,0 +1,39 @@
+{
+  "name": "zwift-technical-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "loadfilter": "./node_modules/.bin/wdio wdio.conf.js --suite loadfilter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annastrik/zwift-technical-assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annastrik/zwift-technical-assessment/issues"
+  },
+  "homepage": "https://github.com/annastrik/zwift-technical-assessment#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/register": "^7.13.8",
+    "@wdio/cli": "^7.2.0",
+    "@wdio/local-runner": "^7.2.0",
+    "@wdio/mocha-framework": "^7.2.0",
+    "@wdio/spec-reporter": "^7.2.0",
+    "@wdio/sync": "^7.2.0",
+    "chromedriver": "^88.0.0",
+    "eslint": "^7.22.0",
+    "wdio-chromedriver-service": "^7.0.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "babel": "^6.23.0"
+  }
+}
