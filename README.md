@@ -7,11 +7,11 @@
 -   [ESlint](https://eslint.org/) code analysis tool
 -   [Github](https://github.com/annastrik/zwift-technical-assessment.git) connection
 
-##Pre-requisites:
+## Pre-requisites:
 -   [Node.js](https://nodejs.org/en/) (v10 or higher). [NPM](https://www.npmjs.com/) will be installed with node.
 -   An updated Chrome browser
 
-##Quick start
+## Quick start
 
 -   Node.js: install from the [website](https://nodejs.org/en/download/)
 -   Clone the git repo
