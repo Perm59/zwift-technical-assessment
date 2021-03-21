@@ -23,12 +23,11 @@ describe('FILTER EVENTS', () => {
 
   it('should validate that events list meet the filtering criteria and system behaves correctly when list is empty', () => {
     if (EventsPage.eventsListNotEmpty()){
-      expect(EventsPage.eventsCount).eq(
-        EventsPage.getEventSportTypeList.filter(el => el === filter.sportType).length);
+      expect(EventsPage.getEventSportTypeList.every(el => el === filter.sportType)).true;
       expect(EventsPage.eventsCount).eq(
         EventsPage.getIntensityList.filter(el => el === filter.intensity).length);
-      expect(EventsPage.eventsCount).eq(EventsPage.getEventTimeList.filter(
-        el => el[0] >= filter.startTime[1] && el[0] < filter.startTime[2] && el[1].slice(-2) === filter.startTime[3]).length);
+      expect(EventsPage.getEventTimeList.every(
+        el => el[0] >= filter.startTime[1] && el[0] < filter.startTime[2] && el[1].slice(-2) === filter.startTime[3])).true;
     } else {
       expect(EventsPage.noResultsNote.isDisplayed()).true;
     }

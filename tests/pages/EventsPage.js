@@ -41,6 +41,9 @@ class EventsPage extends BasePage {
   }
 
   openEventsFilter() {
+    if (!this.filterBtn.isDisplayedInViewport()) {
+      this.filterBtn.scrollIntoView({block: 'center'});
+    }
     helper.clickElement(this.filterBtn);
   }
 

@@ -8,6 +8,9 @@ class NavigMenu extends BasePage {
   }
 
   openEventsPage() {
+    if (!this.eventsBtn.isDisplayedInViewport()){
+      this.eventsBtn.scrollIntoView({block:'center'});
+    }
     helper.clickElement(this.eventsBtn);
   }
 }
