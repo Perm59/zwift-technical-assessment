@@ -3,11 +3,8 @@ import HomePage from '../../pages/HomePage';
 import helper from '../../helper.js';
 
 describe('LOAD HOME PAGE', () => {
-  before('should open zwift.com', () => {
+  before('should open zwift.com and validate the home page is loaded', () => {
     HomePage.open();
-  });
-
-  it('should validate the page is loaded', () => {
     helper.waitForPageLoaded();
   });
 
